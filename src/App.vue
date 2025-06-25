@@ -1,30 +1,49 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <Musica />
+    <SobreMim />
+    <Habilidades />
+    <Projetos />
+    <Contato />
+  </div>
 </template>
 
+<script setup>
+import Habilidades from './components/Habilidades.vue';
+import Projetos from './components/Projetos.vue';
+import SobreMim from './components/SobreMim.vue';
+import Contato from './components/Contato.vue';
+import Musica from './components/Musica.vue';
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.justify-items-center {
+  justify-items: center;
+}
+ .title {
+  font-family: 'Puppies Play', sans-serif;
+  font-size: 6rem;
+  color: #ffffff;
   text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
   font-weight: bold;
-  color: #2c3e50;
+ }
+
+ .font-geral {
+  font-family: 'Open Sans', sans-serif;
+ }
+
+ @media (max-width: 768px) {
+  .title {
+    font-size: 5rem;
+  }
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 </style>

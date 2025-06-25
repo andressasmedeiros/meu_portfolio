@@ -7,9 +7,14 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@primeuix/themes": "^1.1.1",
+    "@primevuelab/themes": "^1.0.0",
     "core-js": "^3.8.3",
+    "primeflex": "^4.0.0",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.3.5",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",

@@ -1,0 +1,226 @@
+:root {
+    --on: 0;
+    --bg: hsl(calc(200 - (var(--on) * 160)), calc((20 + (var(--on) * 50)) * 1%), calc((20 + (var(--on) * 60)) * 1%));
+    --cord: hsl(0, 0%, calc((60 - (var(--on) * 50)) * 1%));
+    --stroke: hsl(0, 0%, calc((60 - (var(--on) * 50)) * 1%));
+    --shine: hsla(0, 0%, 100%, calc(0.75 - (var(--on) * 0.5)));
+    --cap: hsl(0, 0%, calc((40 + (var(--on) * 30)) * 1%));
+    --filament: hsl(45, calc(var(--on) * 80%), calc((25 + (var(--on) * 75)) * 1%));
+}
+
+.toggle-scene {
+    overflow: visible !important;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.toggle-scene__cord {
+    stroke: var(--cord);
+    cursor: move;
+}
+
+.toggle-scene__cord:nth-of-type(1) {
+    display: none;
+}
+
+.toggle-scene__cord-end {
+    stroke: var(--cord);
+    fill: var(--cord);
+}
+
+.toggle-scene__dummy-cord {
+    stroke-width: 6;
+    stroke: var(--cord);
+}
+
+.bulb__filament {
+    stroke: var(--filament);
+}
+
+.bulb__shine {
+    stroke: var(--shine);
+}
+
+.bulb__flash {
+    stroke: #f5e0a3;
+    display: none;
+}
+
+.bulb__bulb {
+    stroke: var(--stroke);
+    fill: hsla(calc(180 - (95 * var(--on))), 80%, 80%, calc(0.1 + (0.4 * var(--on))));
+}
+
+.bulb__cap {
+    fill: var(--cap);
+}
+
+.bulb__cap-shine {
+    fill: var(--shine);
+}
+
+.bulb__cap-outline {
+    stroke: var(--stroke);
+}
+
+.lampada-fixed {
+    position: absolute;
+    transform: translateY(20px);
+}
+
+.toggle-scene__cord:nth-of-type(n + 2) {
+    display: none;
+}
+
+.bulb__cap-shine {
+    display: none;
+}
+
+.lampada-wrapper {
+    width: 75px;
+    height: 75px;
+    position: relative;
+}
+
+body .p-dialog {
+    max-width: 100vw !important;
+    width: 90vw !important;
+}
+
+@media (max-width: 576px) {
+    body .p-dialog {
+        width: 95vw !important;
+        max-height: 80vh !important;
+        /* limita a altura para 80% da viewport */
+        margin: 0 !important;
+        border-radius: 1rem !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body .p-dialog .p-dialog-content {
+        padding: 1rem !important;
+        overflow-y: auto;
+        /* permite rolagem vertical se conteúdo passar da altura */
+    }
+
+    body .p-dialog .p-dialog-header {
+        padding: 1rem !important;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .lampada-wrapper {
+        width: 70px;
+        height: 70px;
+    }
+
+    .lampada-fixed {
+        margin-left: -10px;
+        transform: translateY(10px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .lampada-wrapper {
+        width: 75px;
+        height: 75px;
+    }
+
+    body .p-dialog {
+        max-width: 60vw !important;
+    }
+
+    body .p-dialog h2,
+    body .p-dialog .titulo-secundario,
+    body .p-dialog p,
+    body .p-dialog .card-content h3 {
+        font-size: 1.3rem !important;
+    }
+}
+
+@media (min-width: 1920px) {
+    .lampada-wrapper {
+        width: 90px;
+        height: 90px;
+    }
+
+    .lampada-fixed {
+        margin-left: 5px;
+        transform: translateY(20px);
+    }
+}
+
+@media (min-width: 2560px) {
+    .lampada-wrapper {
+        width: 160px;
+        height: 160px;
+    }
+
+    .lampada-fixed {
+        transform: translateY(20px);
+    }
+}
+
+body,
+html {
+    background-color: #211d20;
+    transition: background-color 0.3s ease;
+}
+
+body.modo-claro,
+html.modo-claro {
+    background-color: #ffffff !important;
+}
+
+/* Scrollbar padrão - modo escuro */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #211d20;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9d79a2;
+    border-radius: 6px;
+    border: 3px solid #211d20;
+}
+
+/* Scrollbar no modo claro */
+body.modo-claro::-webkit-scrollbar {
+    background-color: #ffffff !important;
+}
+
+body.modo-claro::-webkit-scrollbar-thumb {
+    background-color: #F05391 !important;
+    border: 3px solid #ffffff !important;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #9d79a2 #211d20;
+}
+
+body.modo-claro * {
+    scrollbar-color: #F05391 #ffffff;
+}
+
+/* Scrollbar no modo claro - body E html */
+body.modo-claro::-webkit-scrollbar,
+html.modo-claro::-webkit-scrollbar {
+    background-color: #ffffff !important;
+}
+
+body.modo-claro::-webkit-scrollbar-thumb,
+html.modo-claro::-webkit-scrollbar-thumb {
+    background-color: #F05391 !important;
+    border: 3px solid #ffffff !important;
+}
+
+/* Firefox */
+body.modo-claro *,
+html.modo-claro * {
+    scrollbar-color: #F05391 transparent;
+}
