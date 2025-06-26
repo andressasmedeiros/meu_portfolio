@@ -129,7 +129,7 @@
         </div>
       </div>
     </div>
-    <div class="w-full fixed bottom-0 flex justify-around items-center bg-white py-2 z-50 font-geral text-[11px]" style="font-size: 11px;">
+    <div class="w-12 fixed-bottom flex align-items-center font-geral" style="font-size: 11px;">
       <button class="reset-button font-bold" @click="goTo('sobre')">Sobre Mim</button>
       <button class="reset-button font-bold" @click="goTo('habilidades')">Habilidades</button>
       <button class="reset-button font-bold" @click="goTo('projetos')">Projetos</button>
