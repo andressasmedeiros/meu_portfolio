@@ -98,15 +98,6 @@
     animation: bounceFall 1.2s ease-out 1;
 }
 
-.typewriter {
-    overflow: hidden;
-    border-right: 2px solid #EDEDED;
-    white-space: nowrap;
-    animation: typing 3s steps(31, end), blink-caret 0.75s step-end infinite;
-    width: fit-content;
-    max-width: 100%;
-}
-
 .texto-responsivo {
     font-size: 12px;
     color: #EDEDED;
@@ -154,6 +145,9 @@
 }
 
 @media (max-width: 375px) {
+    .title_principal {
+        font-size: 19px !important;
+    }
     .responsivo {
         max-width: 100% !important;
     }
@@ -161,7 +155,7 @@
 
 @media (max-width: 767px) {
     .title_principal {
-        font-size: 21px;
+        font-size: 23px;
     }
 
     .subtitle {
@@ -358,26 +352,34 @@
     }
 }
 
+.typewriter {
+    overflow: hidden;
+    border-right: 2px solid #EDEDED;
+    white-space: nowrap;
+    animation: typing 3s steps(31, end), blink-caret 0.75s step-end infinite;
+    width: fit-content0;
+    max-width: 100%;
+}
 
 @keyframes typing {
     from {
-        width: 0;
+        width: 0
     }
 
     to {
-        width: 100%;
+        width: 31ch
     }
 }
 
 @keyframes blink-caret {
 
-    from,
-    to {
+    0%,
+    100% {
         border-color: transparent;
     }
 
     50% {
-        border-color: #fff;
+        border-color: #EDEDED;
     }
 }
 
