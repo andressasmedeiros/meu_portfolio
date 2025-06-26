@@ -16,10 +16,6 @@
     color: #EDEDED;
 }
 
-.fixed-bottom div {
-  touch-action: manipulation;
-}
-
 .toolbar-custom a {
     font-family: 'Open Sans', sans-serif;
     background: transparent;

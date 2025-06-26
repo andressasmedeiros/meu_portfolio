@@ -139,10 +139,8 @@
       <div class="flex flex-column" @click="goTo('projetos')">
         <span class="font-bold">Projetos</span>
       </div>
-      <div class="flex flex-column" @click="goTo('contato')">
-        <span class="font-bold">Contato</span>
-      </div>
-      <div class="flex flex-column">
+      <button class="font-bold" @click="goTo('sobre')">Sobre</button>
+      <div class="flex flex-column flex flex-column">
         <a href="/CurriculoAndressa.pdf" download class="font-bold no-underline" style="color: #88B04B">
           Currículo
         </a>
