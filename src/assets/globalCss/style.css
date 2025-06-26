@@ -186,10 +186,6 @@ body .p-dialog {
     }
 }
 
-#habilidades, #projetos, #contato {
-  scroll-margin-top: 60px;
-}
-
 body,
 html {
     background-color: #211d20;

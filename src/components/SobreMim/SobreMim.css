@@ -153,6 +153,10 @@ body.modo-claro .texto-responsivo {
     color: #3B3B3B;
 }
 
+#habilidades, #projetos, #contato {
+  scroll-margin-top: 60px;
+}
+
 .texto-intro {
     color: #EDEDED;
 }
