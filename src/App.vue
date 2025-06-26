@@ -2,9 +2,17 @@
   <div>
     <Musica />
     <SobreMim />
-    <Habilidades />
-    <Projetos />
-    <Contato />
+    <ClientOnly>
+      <Habilidades />
+    </ClientOnly>
+
+    <ClientOnly>
+      <Projetos />
+    </ClientOnly>
+
+    <ClientOnly>
+      <Contato />
+    </ClientOnly>
   </div>
 </template>
 
