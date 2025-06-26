@@ -147,13 +147,15 @@
 <script lang="js">
 export default {
   methods: {
-    goTo(id) {
-      const el = document.getElementById(id)
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' })
-      }
+  goTo(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      console.warn(`Elemento com id ${id} não encontrado!`);
     }
-  },
+  }
+},
   mounted() {
     const {
       gsap: { registerPlugin, set, to, timeline },
