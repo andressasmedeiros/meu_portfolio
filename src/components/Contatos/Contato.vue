@@ -1,5 +1,5 @@
 <template>
-  <section id="contatos" class="min-h-screen w-full flex flex-column section-contato">
+  <section id="contato" class="min-h-screen w-full flex flex-column section-contato">
     <div class="w-12 text-center flex justify-content-center align-self-center mb-5">
       <span class="title mt-3">Contato</span>
     </div>

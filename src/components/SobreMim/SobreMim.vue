@@ -129,33 +129,38 @@
         </div>
       </div>
     </div>
-    <div class="w-12 fixed-bottom flex justify-content-around align-items-center font-geral" style="font-size: 11px;">
-  <button class="font-bold p-0 m-0 text-xs bg-transparent border-none cursor-pointer" @click="goTo('sobre')">Sobre Mim</button>
-  <button class="font-bold p-0 m-0 text-xs bg-transparent border-none cursor-pointer" @click="goTo('habilidades')">Habilidades</button>
-  <button class="font-bold p-0 m-0 text-xs bg-transparent border-none cursor-pointer" @click="goTo('projetos')">Projetos</button>
-  <button class="font-bold p-0 m-0 text-xs bg-transparent border-none cursor-pointer" @click="goTo('contatos')">Contatos</button>
-  <div class="flex flex-column">
-    <a href="/CurriculoAndressa.pdf" download class="font-bold no-underline" style="color: #88B04B">
-      Currículo
-    </a>
-  </div>
-</div>
-
+    <div class="w-12 fixed-bottom flex align-items-center font-geral" style="font-size: 11px;">
+      <div class="flex flex-column" @click="goTo('sobre')">
+        <span class="font-bold">Sobre</span>
+      </div>
+      <div class="flex flex-column" @click="goTo('habilidades')">
+        <span class="font-bold">Habilidades</span>
+      </div>
+      <div class="flex flex-column" @click="goTo('projetos')">
+        <span class="font-bold">Projetos</span>
+      </div>
+      <div class="flex flex-column" @click="goTo('contato')">
+        <span class="font-bold">Contato</span>
+      </div>
+      <div class="flex flex-column">
+        <a href="/CurriculoAndressa.pdf" download class="font-bold no-underline" style="color: #88B04B">
+          Currículo
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="js">
 export default {
   methods: {
-  goTo(id) {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      console.warn(`Elemento com id ${id} não encontrado!`);
+    goTo(id) {
+      const el = document.getElementById(id)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' })
+      }
     }
-  }
-},
+  },
   mounted() {
     const {
       gsap: { registerPlugin, set, to, timeline },
