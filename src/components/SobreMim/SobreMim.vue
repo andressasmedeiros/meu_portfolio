@@ -143,7 +143,7 @@
         <span class="font-bold">Contato</span>
       </div>
       <div class="flex flex-column">
-        <a href="/@assets/PDF/CurriculoAndressa.pdf" download class="font-bold no-underline" style="color: #88B04B">
+        <a href="/@assets/CurriculoAndressa.pdf" download class="font-bold no-underline" style="color: #88B04B">
           Currículo
         </a>
       </div>
