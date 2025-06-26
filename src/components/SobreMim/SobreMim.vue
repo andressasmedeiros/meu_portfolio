@@ -173,11 +173,11 @@ export default {
   mounted() {
     const {
       gsap: { registerPlugin, set, to, timeline },
-      MorphSVGPlugin,
+      ScrollTrigger,
       Draggable
     } = window;
 
-    registerPlugin(MorphSVGPlugin);
+    registerPlugin(ScrollTrigger);
 
     let startX, startY;
     const AUDIO = {
