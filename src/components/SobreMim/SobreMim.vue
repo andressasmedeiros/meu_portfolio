@@ -155,10 +155,13 @@
 export default {
   methods: {
     goTo(id) {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      // Adiciona um atraso de 100 milissegundos
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
     }
   },
   mounted() {
