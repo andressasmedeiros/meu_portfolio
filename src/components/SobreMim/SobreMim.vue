@@ -124,7 +124,6 @@
               colaborei em projetos de outros desenvolvedores, contribuindo com organização,
               integrações e melhorias no código.
             </p>
-            <Button @click="testScroll('projetos')" />
           </div>
         </div>
       </div>
@@ -154,23 +153,20 @@
 <script lang="js">
 export default {
   methods: {
-    testScroll() {
-      const el = document.querySelector('#habilidades');
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-        alert('Scroll manual executado!');
-      } else {
-        alert('Elemento não encontrado!');
-      }
-    },
     goTo(id) {
-      // Adiciona um atraso de 100 milissegundos
+      console.log(`Tentando rolar para o ID: ${id}`); // Adicione um log para depurar
+
+      // Adiciona um atraso de 150 milissegundos
       setTimeout(() => {
         const element = document.getElementById(id);
+
         if (element) {
+          console.log(`Elemento com ID ${id} encontrado! Rolando...`);
           element.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.error(`Elemento com ID ${id} NÃO encontrado.`);
         }
-      }, 100);
+      }, 150); // Aumente o tempo se necessário, 150ms é um bom ponto de partida
     }
   },
 
