@@ -135,16 +135,6 @@
     color: #F8F4E3;
 }
 
-.reset-button {
-  all: unset; /* remove todos os estilos padrão */
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 body.modo-claro .name-logo {
     color: #7A9EBD;
 }
