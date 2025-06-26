@@ -104,7 +104,6 @@
         </svg>
       </div>
     </div>
-
     <div class="container-imagem">
       <div class="w-full md:w-6 flex justify-content-center align-items-center">
         <img src="@/assets/img/livroteste2.png" alt="Logo" class="logo-bounce imagem-logo">
@@ -130,6 +129,7 @@
       </div>
     </div>
     <div class="w-12 fixed-bottom flex align-items-center font-geral" style="font-size: 11px;">
+      <bottom @click="testScroll('projetos')"></bottom>
       <div class="flex flex-column" @click="goTo('sobre')">
         <span class="font-bold">Sobre</span>
       </div>
@@ -154,6 +154,15 @@
 <script lang="js">
 export default {
   methods: {
+    testScroll() {
+      const el = document.querySelector('#habilidades');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        alert('Scroll manual executado!');
+      } else {
+        alert('Elemento não encontrado!');
+      }
+    },
     goTo(id) {
       // Adiciona um atraso de 100 milissegundos
       setTimeout(() => {
@@ -164,6 +173,7 @@ export default {
       }, 100);
     }
   },
+
   mounted() {
     const {
       gsap: { registerPlugin, set, to, timeline },
