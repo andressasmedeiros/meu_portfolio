@@ -7,7 +7,7 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/SobreMim.vue'
+import HelloWorld from '@/components/SobreMim/SobreMim.vue'
 
 export default {
   name: 'HomeView',

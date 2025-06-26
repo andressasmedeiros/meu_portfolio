@@ -39,7 +39,7 @@
             <div v-if="projetoSelecionado?.repositorio" class="mt-4">
                 <a :href="projetoSelecionado.repositorio" target="_blank"
                     class="px-4 py-2 font-bold border-round-lg transition-all text-white font-geral card"
-                    style="text-decoration: none; background-color: #bf8fff;">
+                    style="text-decoration: none; background-color: #88B04B;">
                     🔗 Ver Repositório no GitHub
                 </a>
             </div>
@@ -51,7 +51,7 @@
 <script setup>
 import { ref } from "vue";
 import Dialog from "primevue/dialog";
-import projetosData from "../data/public";
+import projetosData from "../../data/public";
 
 
 const projetos = ref(projetosData);
@@ -67,11 +67,11 @@ function abrirModal(projeto) {
 
 <style>
 .titulo-secundario {
-    color: #bf8fff;
+    color: #88B04B;
 }
 
 body.modo-claro .titulo-secundario {
-    color: #49224e
+    color: #3B7A57
 }
 
 body.modo-claro .p-dialog {
@@ -85,107 +85,8 @@ body.modo-claro .p-dialog h2 {
 }
 
 body.modo-claro .p-dialog a.card {
-  background-color: #49224e !important;
+    background-color: #3B7A57 !important;
 }
 </style>
 
-<style scoped>
-.full-screen {
-    min-height: 100vh;
-    background-color: #49224e;
-    background-image: url('@/assets/papelAmassado.png');
-    padding: 2rem;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-}
-
-.title {
-    color: #ffffff;
-}
-
-body.modo-claro .full-screen {
-    background-color: #FFE9B6;
-}
-
-body.modo-claro .title {
-    color: #211d20;
-}
-
-
-.card {
-    position: relative;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-.overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    border-radius: 0.75rem;
-}
-
-.card-content {
-    position: relative;
-    z-index: 2;
-}
-
-.card-content h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    color: #ffffff;
-}
-
-@media (max-width: 577px) {
-    .card {
-        height: 150px;
-    }
-}
-
-@media (max-width: 991px) {
-    .card {
-        height: 200px;
-    }
-}
-
-@media (max-width: 1280px) {
-    .card {
-        height: 250px;
-    }
-
-    .card-content h3 {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        height: 150px;
-    }
-
-    .card-content h3 {
-        font-size: 15px;
-    }
-}
-
-@media (min-width: 2560px) {
-    .card {
-        height: 500px;
-    }
-
-    .card-content h3 {
-        font-size: 35px;
-    }
-}
-</style>
+<style src="./Projetos.css" scoped></style>

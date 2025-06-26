@@ -40,7 +40,7 @@ export default {
   mounted() {
     this.audio = new Audio('/musica.mp3');
     this.audio.loop = true;
-    this.audio.volume = 0.08;
+    this.audio.volume = 0.01;
 
     // Tentar autoplay ao montar
     this.tentarTocarAutomaticamente();
@@ -48,20 +48,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.botao-musica {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #f05391;
-  border: none;
-  border-radius: 50%;
-  color: white;
-  font-size: 20px;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
-}
-</style>
+<style src="./Musica.css" scoped></style>

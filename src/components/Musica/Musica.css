@@ -1,0 +1,46 @@
+.botao-musica {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #88B04B;
+    border: none;
+    border-radius: 50%;
+    color: #EDEDED;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px #A398D1;
+    z-index: 9999;
+}
+
+.botao-musica {
+    background: #88B04B !important;
+    box-shadow: 0 4px 12px #A398D1;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.botao-musica:hover {
+    background: #6D8B3D !important;
+    box-shadow: 0 6px 16px #A398D1;
+}
+
+.botao-musica:focus {
+    background: #6D8B3D !important;
+}
+
+:deep(.p-button:hover),
+:deep(.p-button-primary:hover) {
+    background: #6D8B3D !important;
+    color: #EDEDED !important;
+    border-color: #3B7A57 !important;
+}
+
+@media (max-width: 767px) {
+    .botao-musica {
+        bottom: 78px;
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+}

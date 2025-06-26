@@ -3,7 +3,7 @@ import App from './App.vue'
 import { createWebHistory } from 'vue-router'
 import { createRouter } from 'vue-router'
 import PrimeVue from 'primevue/config';
-import './assets/lampada.css'
+import './assets/globalCss/style.css'
 import Aura from '@primeuix/themes/aura';
 import {
   Toolbar,
@@ -20,7 +20,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'Home',
-      component: () => import('./components/SobreMim.vue')
+      component: () => import('./components/SobreMim/SobreMim.vue')
     }
   ]
 });

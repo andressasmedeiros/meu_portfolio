@@ -12,7 +12,7 @@ export default [
                 texto: `Facilita a logística interna entre filiais ao eliminar o contato direto com motoristas, automatizando a movimentação de produtos e aumentando a eficiência operacional.`
             },
             {
-                titulo: "⚙️ Tecnologias Utilizadas:",
+                titulo: "Tecnologias Utilizadas:",
                 texto: `• React Native com Expo
                 • TypeScript para código tipado e seguro`
             },
@@ -45,8 +45,8 @@ export default [
                 • Gerenciamento de estado e rotas entre telas no app`
             }
         ],
-        imagem: require("@/assets/thumb-video.png"),
-        video: require("@/assets/video.mp4"),
+        imagem: require("@/assets/img/thumb-video.png"),
+        video: require("@/assets/videos/video.mp4"),
         repositorio: "https://github.com/andressasmedeiros/projeto_finalM01"
     },
     {
@@ -91,12 +91,12 @@ export default [
                 • Importância do design responsivo e usabilidade`
             }
         ],
-        imagem: require("@/assets/farmacia-thumb.png"),
-        video: require("@/assets/farmacia.mp4"),
+        imagem: require("@/assets/img/farmacia-thumb.png"),
+        video: require("@/assets/videos/farmacia.mp4"),
         repositorio: "https://github.com/DEVinHouse-Clamed-V3/mini-projeto-avaliativo-grupo-algoritmos"
     },
     {
-        titulo: "⚙️ Site Gerenciamento Farmácia - Backend",
+        titulo: "Site Gerenciamento Farmácia - Backend",
         resumo: "Node.js, Express, TypeScript, TypeORM, JWT, Swagger",
         descricao: [
             {
@@ -141,8 +141,8 @@ export default [
                 • Boas práticas em TypeScript para escalabilidade e manutenção`
             }
         ],
-        imagem: require("@/assets/thumb_backend.png"),
-        video: require("@/assets/backend.mp4"),
+        imagem: require("@/assets/img/thumb_backend.png"),
+        video: require("@/assets/videos/backend.mp4"),
         repositorio: "https://github.com/andressasmedeiros/site-gerenciamento-farmacia/tree/main/api"
     },
     {
@@ -189,8 +189,8 @@ export default [
                 texto: `• Prática em desenvolvimento mobile com React Native, gerenciamento local de estado, navegação entre telas, e manipulação de formulários.`
             }
         ],
-        imagem: require("@/assets/thumb_app.png"),
-        video: require("@/assets/APP.mp4"),
+        imagem: require("@/assets/img/thumb_app.png"),
+        video: require("@/assets/videos/APP.mp4"),
         repositorio: "https://github.com/DEVinHouse-Clamed-V3/app-avaliaaqui-andressasmedeiros"
     },
     {
@@ -238,7 +238,8 @@ export default [
                 • Configuração de rotas protegidas com React Router`
             }
         ],
-        imagem: require("@/assets/site_farmacia.png"),
+        imagem: require("@/assets/img/site_farmacia.png"),
+        video: require("@/assets/videos/farmacia.mp4"),
         repositorio: "https://github.com/andressasmedeiros/site-gerenciamento-farmacia/tree/main/web"
     },
     {
@@ -280,6 +281,6 @@ O objetivo é permitir que usuários visualizem um cardápio, selecionem lanches
                 • Simulação de fluxo real de usuário`
             }
         ],
-        imagem: require("@/assets/projeto6.png")
+        imagem: require("@/assets/img/projeto6.png")
     }
 ];

@@ -164,63 +164,90 @@ body .p-dialog {
     }
 }
 
+.justify-items-center {
+    justify-items: center;
+}
+
+.title {
+    font-family: 'Puppies Play', sans-serif;
+    font-size: 6rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.font-geral {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 5rem;
+    }
+}
+
 body,
 html {
     background-color: #211d20;
     transition: background-color 0.3s ease;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body.modo-claro,
 html.modo-claro {
-    background-color: #ffffff !important;
+    background-color: #F8F4E3 !important;
 }
 
 /* Scrollbar padrão - modo escuro */
 ::-webkit-scrollbar {
     width: 12px;
-    background-color: #211d20;
+    background-color: #1D1F1B;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #9d79a2;
+    background-color: #88B04B;
     border-radius: 6px;
-    border: 3px solid #211d20;
+    border: 3px solid #1D1F1B;
 }
 
 /* Scrollbar no modo claro */
 body.modo-claro::-webkit-scrollbar {
-    background-color: #ffffff !important;
+    background-color: #F8F4E3 !important;
 }
 
 body.modo-claro::-webkit-scrollbar-thumb {
-    background-color: #F05391 !important;
-    border: 3px solid #ffffff !important;
+    background-color: #7A9EBD !important;
+    border: 3px solid #F8F4E3 !important;
 }
 
 /* Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: #9d79a2 #211d20;
+    scrollbar-color: #88B04B #1D1F1B;
 }
 
 body.modo-claro * {
-    scrollbar-color: #F05391 #ffffff;
+    scrollbar-color: #7A9EBD #F8F4E3;
 }
 
 /* Scrollbar no modo claro - body E html */
 body.modo-claro::-webkit-scrollbar,
 html.modo-claro::-webkit-scrollbar {
-    background-color: #ffffff !important;
+    background-color: #F8F4E3 !important;
 }
 
 body.modo-claro::-webkit-scrollbar-thumb,
 html.modo-claro::-webkit-scrollbar-thumb {
-    background-color: #F05391 !important;
-    border: 3px solid #ffffff !important;
+    background-color: #7A9EBD !important;
+    border: 3px solid #F8F4E3 !important;
 }
 
 /* Firefox */
 body.modo-claro *,
 html.modo-claro * {
-    scrollbar-color: #F05391 transparent;
+    scrollbar-color: #7A9EBD transparent;
 }
