@@ -151,11 +151,11 @@ export default [
         descricao: [
             {
                 titulo: "Descrição do Projeto:",
-                texto: `AvaliaAqui é um aplicativo desenvolvido durante o módulo de mobile da formação DevInHouse Clamed. Ele tem como objetivo permitir que gestores avaliem farmácias e seus colaboradores com base em critérios pré-definidos, otimizando o processo de avaliação interno.`
+                texto: `AvaliaAqui é um aplicativo desenvolvido durante o módulo de mobile da formação DevInHouse Clamed. Ele tem como objetivo permitir que gestores avaliem a satisfação de seus clientes`
             },
             {
                 titulo: "Problema que Resolve:",
-                texto: `Elimina a necessidade de avaliações manuais, fornecendo uma ferramenta mobile padronizada e centralizada para registrar, acompanhar e editar avaliações de desempenho.`
+                texto: `Elimina a necessidade de avaliações manuais, fornecendo uma ferramenta mobile padronizada e centralizada para registrar, acompanhar avaliações`
             },
             {
                 titulo: "Tecnologias Utilizadas:",
@@ -167,8 +167,7 @@ export default [
             },
             {
                 titulo: "Funcionalidades Principais:",
-                texto: `• Tela de login simples
-                • Cadastro de avaliações com nome e descrição
+                texto: `• Cadastro de avaliações com nome e descrição
                 • Armazenamento local dos dados`
             },
             {
@@ -199,7 +198,7 @@ export default [
         descricao: [
             {
                 titulo: "Descrição do Projeto:",
-                texto: `Aplicação web frontend para gerenciamento de farmácia, permitindo interação com a API backend para controle de usuários, produtos, movimentações e permissões. Desenvolvida com React e TypeScript para uma interface moderna, responsiva e dinâmica.`
+                texto: `Aplicação web frontend para gerenciamento de farmácia, permitindo interação com a API backend para controle de usuários, produtos, movimentações e permissões. Desenvolvida com Vue e JavaScript para uma interface moderna, responsiva e dinâmica.`
             },
             {
                 titulo: "Objetivo:",
@@ -207,11 +206,9 @@ export default [
             },
             {
                 titulo: "Tecnologias Utilizadas:",
-                texto: `• React.js para construção da interface e componentes reutilizáveis
-                • TypeScript para tipagem estática e prevenção de erros
-                • Axios para comunicação com API RESTful
-                • Styled Components para estilização modular e dinâmica
-                • React Router para navegação entre telas e rotas protegidas`
+                texto: `• Vue.js para construção da interface e componentes reutilizáveis
+                • JavaScript para tipagem estática e prevenção de erros
+                • Axios para comunicação com API RESTful`
             },
             {
                 titulo: "Funcionalidades Principais:",
@@ -231,11 +228,10 @@ export default [
             },
             {
                 titulo: "Aprendizado:",
-                texto: `• Desenvolvimento de SPA com React e TypeScript
-                • Gerenciamento de estado e efeitos colaterais com hooks
+                texto: `• Gerenciamento de estado e efeitos colaterais com hooks
                 • Integração segura com APIs REST usando Axios e JWT
                 • Criação de UI moderna e responsiva com Styled Components
-                • Configuração de rotas protegidas com React Router`
+                • Configuração de rotas protegidas`
             }
         ],
         imagem: require("@/assets/img/site_farmacia.png"),
