@@ -152,21 +152,6 @@
 
 <script lang="js">
 export default {
-  methods: {
-    goTo(id) {
-      console.log(`Tentando rolar para o ID: ${id}`); // Adicione um log para depurar
-
-      setTimeout(() => {
-        const element = document.querySelector(`#${id}`);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        } else {
-          console.error(`Elemento com ID ${id} não encontrado.`);
-        }
-      }, 400);
-    }
-  },
-
   mounted() {
     const {
       gsap: { registerPlugin, set, to, timeline },
