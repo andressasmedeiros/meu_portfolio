@@ -16,6 +16,10 @@
     color: #EDEDED;
 }
 
+.fixed-bottom a:visited {
+    color: #EDEDED;
+}
+
 .toolbar-custom a {
     font-family: 'Open Sans', sans-serif;
     background: transparent;
@@ -167,6 +171,10 @@ body.modo-claro .texto-intro {
 
 body.modo-claro .subtitle {
     color: #7A9EBD;
+}
+
+body.modo-claro .fixed-bottom a:visited {
+    color: #1D1F1B;
 }
 
 body.modo-claro .toolbar-custom a {
