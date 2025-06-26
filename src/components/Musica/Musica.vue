@@ -40,7 +40,7 @@ export default {
   mounted() {
     this.audio = new Audio('/musica.mp3');
     this.audio.loop = true;
-    this.audio.volume = 0.5;
+    this.audio.volume = 0.1;
 
     // Tentar autoplay ao montar
     this.tentarTocarAutomaticamente();

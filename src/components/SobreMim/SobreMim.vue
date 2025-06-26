@@ -130,18 +130,18 @@
       </div>
     </div>
     <div class="w-12 fixed-bottom flex align-items-center font-geral" style="font-size: 11px;">
-      <div class="flex flex-column" @click="goTo('sobre')">
-        <span class="font-bold">Sobre</span>
-      </div>
-      <div class="flex flex-column" @click="goTo('habilidades')">
+      <a href="#sobre" @click.prevent="goTo('sobre')" class="flex flex-column font-bold no-underline">
+        <span class="font-bold">Sobre Mim</span>
+      </a>
+      <a href="#habilidades" @click.prevent="goTo('habilidades')" class="flex flex-column font-bold no-underline">
         <span class="font-bold">Habilidades</span>
-      </div>
-      <div class="flex flex-column" @click="goTo('projetos')">
+      </a>
+      <a href="#projetos" @click.prevent="goTo('projetos')" class="flex flex-column font-bold no-underline">
         <span class="font-bold">Projetos</span>
-      </div>
-      <div class="flex flex-column" @click="goTo('contato')">
+      </a>
+      <a href="#contato" @click.prevent="goTo('contato')" class="flex flex-column font-bold no-underline">
         <span class="font-bold">Contato</span>
-      </div>
+      </a>
       <div class="flex flex-column">
         <a href="/@assets/CurriculoAndressa.pdf" download class="font-bold no-underline" style="color: #88B04B">
           Currículo
