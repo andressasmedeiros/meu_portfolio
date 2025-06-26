@@ -51,7 +51,7 @@
     cursor: pointer;
 }
 
-.fixed-bottom>div:hover {
+.fixed-bottom>a:hover {
     transform: translateY(-4px);
     text-shadow: 0 4px 12px #A398D1;
 }
