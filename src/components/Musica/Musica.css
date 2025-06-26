@@ -1,5 +1,5 @@
 .botao-musica {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
     background: #88B04B;
