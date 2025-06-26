@@ -124,12 +124,12 @@
               colaborei em projetos de outros desenvolvedores, contribuindo com organização,
               integrações e melhorias no código.
             </p>
+            <Button @click="testScroll('projetos')" />
           </div>
         </div>
       </div>
     </div>
     <div class="w-12 fixed-bottom flex align-items-center font-geral" style="font-size: 11px;">
-      <bottom @click="testScroll('projetos')"></bottom>
       <div class="flex flex-column" @click="goTo('sobre')">
         <span class="font-bold">Sobre</span>
       </div>
