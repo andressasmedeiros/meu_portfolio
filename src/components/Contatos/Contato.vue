@@ -170,9 +170,9 @@
 <script setup lang="js">
 import { onMounted, onBeforeUnmount } from 'vue'
 import { gsap } from 'gsap'
-import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
   const safeToAnimate = window.matchMedia('(prefers-reduced-motion: no-preference)').matches
