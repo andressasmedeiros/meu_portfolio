@@ -190,7 +190,6 @@ onMounted(() => {
     neckShadow: document.querySelector('.me > .shadow'),
   }
 
-  // Função para animar a entrada da figura
   function animateEntrance() {
     gsap.fromTo(
       document.querySelector('.me'),
@@ -199,10 +198,8 @@ onMounted(() => {
     )
   }
 
-  // Dispara a animação no carregamento
   animateEntrance()
 
-  // Observer para disparar animação toda vez que #contato entrar na viewport
   const contatoSection = document.getElementById('contato')
 
   const observer = new IntersectionObserver(
@@ -213,12 +210,11 @@ onMounted(() => {
         }
       })
     },
-    { threshold: 0.5 } // quando 50% da seção estiver visível
+    { threshold: 0.5 }
   )
 
   if (contatoSection) observer.observe(contatoSection)
 
-  // Mapeamento para movimento com mouse
   let xPosition
   let yPosition
   let storedXPosition
@@ -297,7 +293,6 @@ onMounted(() => {
     yPosition = mapHeight(e.clientY)
   })
 
-  // Cleanup para remover listeners e observer
   onBeforeUnmount(() => {
     window.removeEventListener('resize', setMaps)
     window.removeEventListener('mousemove', () => { })

@@ -14,20 +14,7 @@ import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
 
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: () => import('./components/SobreMim/SobreMim.vue')
-    }
-  ]
-});
-
-
 const app = createApp(App);
-app.use(router);
 app.use(PrimeVue, {
   theme: {
     preset: Aura

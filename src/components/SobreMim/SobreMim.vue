@@ -182,14 +182,13 @@ export default {
             trigger: cord,
             start: "top 80%",
             end: "bottom 60%",
-            scrub: true, // ou false para animação mais "dura"
+            scrub: true,
             toggleActions: "play none none reverse"
           }
         }
       );
     });
 
-    // Se quiser ainda usar o clique para alternar tema:
     const AUDIO = {
       CLICK: new Audio('https://assets.codepen.io/605876/click.mp3')
     };

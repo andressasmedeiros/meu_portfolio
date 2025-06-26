@@ -102,7 +102,7 @@
     overflow: hidden;
     border-right: 2px solid #EDEDED;
     white-space: nowrap;
-    animation: typing 3s steps(35, end), blink-caret 0.75s step-end infinite;
+    animation: typing 3s steps(31, end), blink-caret 0.75s step-end infinite;
     width: fit-content;
     max-width: 100%;
 }

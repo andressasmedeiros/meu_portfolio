@@ -27,7 +27,6 @@ export default {
       this.audio.play().then(() => {
         this.tocando = true;
       }).catch(() => {
-        // Se o navegador bloquear, tentamos após o primeiro clique
         const ativarSom = () => {
           this.audio.play();
           this.tocando = true;
@@ -41,8 +40,6 @@ export default {
     this.audio = new Audio('/musica.mp3');
     this.audio.loop = true;
     this.audio.volume = 0.06;
-
-    // Tentar autoplay ao montar
     this.tentarTocarAutomaticamente();
   }
 };
