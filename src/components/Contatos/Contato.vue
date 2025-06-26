@@ -169,7 +169,10 @@
 
 <script setup lang="js">
 import { onMounted, onBeforeUnmount } from 'vue'
-import gsap from 'gsap'
+import { gsap } from 'gsap'
+import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin'
+
+gsap.registerPlugin(MorphSVGPlugin);
 
 onMounted(() => {
   const safeToAnimate = window.matchMedia('(prefers-reduced-motion: no-preference)').matches
