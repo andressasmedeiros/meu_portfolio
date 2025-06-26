@@ -132,9 +132,9 @@
       <div class="flex flex-column" @click="goTo('sobre')">
         <span class="font-bold">Sobre</span>
       </div>
-      <div class="flex flex-column" @click="goTo('habilidades')">
+      <a href="#habilidades" class="flex flex-column">
         <span class="font-bold">Habilidades</span>
-      </div>
+      </a>
       <div class="flex flex-column" @click="goTo('projetos')">
         <span class="font-bold">Projetos</span>
       </div>
