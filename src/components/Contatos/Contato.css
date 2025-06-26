@@ -4,6 +4,10 @@
 }
 
 #pc-svg {
+  max-width: 1000px;
+}
+
+#pc-svg {
   width: 100%;
   max-width: 600px;
   height: auto;
@@ -13,30 +17,6 @@
 .section-contato {
   background-color: #1D1F1B;
   transition: background-color 0.3s ease;
-}
-
-body.modo-claro .section-contato {
-  background-color: #F8F4E3;
-}
-
-body.modo-claro .color-card h3 {
-  color: #1D1F1B;
-}
-
-body.modo-claro .color-card p {
-  color: #1D1F1B;
-}
-
-body.modo-claro .title {
-  color: #3B3B3B;
-}
-
-body.modo-claro .icon-circle {
-  background-color: #D4AF37;
-}
-
-body.modo-claro .icon {
-  color: #1c1a1e;
 }
 
 .color-card h3,
@@ -98,9 +78,7 @@ body.modo-claro .icon {
 .contact-itens a:hover>div {
   box-shadow: 0 8px 20px #A398D1;
   border-radius: 12px;
-  /* pra dar cantos arredondados bonitos */
   padding: 0.5rem;
-  /* um espaçamento para sombra não ficar muito "grudada" */
 }
 
 @media (max-width: 767px) {
@@ -110,7 +88,6 @@ body.modo-claro .icon {
 
   .section-contato {
     padding-bottom: 60px;
-    /* mesmo valor da altura do .fixed-bottom */
   }
 }
 
@@ -151,8 +128,28 @@ body.modo-claro .icon {
     width: 800px;
     height: auto;
   }
+}
 
-  #pc-svg {
-    max-width: 1000px;
-  }
+body.modo-claro .section-contato {
+  background-color: #F8F4E3;
+}
+
+body.modo-claro .color-card h3 {
+  color: #1D1F1B;
+}
+
+body.modo-claro .color-card p {
+  color: #1D1F1B;
+}
+
+body.modo-claro .title {
+  color: #3B3B3B;
+}
+
+body.modo-claro .icon-circle {
+  background-color: #D4AF37;
+}
+
+body.modo-claro .icon {
+  color: #1c1a1e;
 }

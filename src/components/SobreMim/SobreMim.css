@@ -1,3 +1,9 @@
+#habilidades,
+#projetos,
+#contato {
+    scroll-margin-top: 60px;
+}
+
 .pagina {
     position: relative;
     min-height: auto;
@@ -45,6 +51,15 @@
     font-size: 15px;
 }
 
+.toolbar-custom a:hover {
+    transform: translateY(-4px);
+    text-shadow: 0 4px 12px #A398D1;
+}
+
+.toolbar-custom {
+    justify-content: space-around !important;
+}
+
 .fixed-bottom>div {
     padding: 0 0.5rem;
     transition: transform 0.2s ease, text-shadow 0.2s ease;
@@ -54,16 +69,6 @@
 .fixed-bottom>a:hover {
     transform: translateY(-4px);
     text-shadow: 0 4px 12px #A398D1;
-}
-
-.toolbar-custom a:hover {
-    transform: translateY(-4px);
-    text-shadow: 0 4px 12px #A398D1;
-}
-
-.menu-links {
-    display: none;
-    color: #EDEDED
 }
 
 .fixed-bottom {
@@ -77,6 +82,11 @@
     border-top: 1px solid #EDEDED;
 }
 
+.menu-links {
+    display: none;
+    color: #EDEDED
+}
+
 .logo-animated {
     position: absolute;
     top: 40%;
@@ -86,10 +96,6 @@
 
 .logo-bounce {
     animation: bounceFall 1.2s ease-out 1;
-}
-
-.toolbar-custom {
-    justify-content: space-around !important;
 }
 
 .typewriter {
@@ -139,50 +145,8 @@
     color: #F8F4E3;
 }
 
-body.modo-claro .name-logo {
-    color: #7A9EBD;
-}
-
-body.modo-claro .pagina {
-    background-color: #F8F4E3;
-}
-
-body.modo-claro .fixed-bottom {
-    background-color: #F8F4E3;
-    color: #1D1F1B;
-    border-top: 1px solid #1D1F1B;
-}
-
-body.modo-claro .texto-responsivo {
-    color: #3B3B3B;
-}
-
-#habilidades, #projetos, #contato {
-  scroll-margin-top: 60px;
-}
-
 .texto-intro {
     color: #EDEDED;
-}
-
-body.modo-claro .texto-intro {
-    color: #3B3B3B;
-}
-
-body.modo-claro .subtitle {
-    color: #7A9EBD;
-}
-
-body.modo-claro .fixed-bottom a:visited {
-    color: #1D1F1B;
-}
-
-body.modo-claro .toolbar-custom a {
-    color: #1D1F1B;
-}
-
-body.modo-claro .text-intro-name {
-    color: #88B04B;
 }
 
 .text-intro-name {
@@ -459,4 +423,42 @@ body.modo-claro .text-intro-name {
     to {
         width: 100%;
     }
+}
+
+body.modo-claro .name-logo {
+    color: #7A9EBD;
+}
+
+body.modo-claro .pagina {
+    background-color: #F8F4E3;
+}
+
+body.modo-claro .fixed-bottom {
+    background-color: #F8F4E3;
+    color: #1D1F1B;
+    border-top: 1px solid #1D1F1B;
+}
+
+body.modo-claro .texto-responsivo {
+    color: #3B3B3B;
+}
+
+body.modo-claro .texto-intro {
+    color: #3B3B3B;
+}
+
+body.modo-claro .subtitle {
+    color: #7A9EBD;
+}
+
+body.modo-claro .fixed-bottom a:visited {
+    color: #1D1F1B;
+}
+
+body.modo-claro .toolbar-custom a {
+    color: #1D1F1B;
+}
+
+body.modo-claro .text-intro-name {
+    color: #88B04B;
 }

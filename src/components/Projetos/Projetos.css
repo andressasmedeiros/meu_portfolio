@@ -12,15 +12,6 @@
     color: #EDEDED;
 }
 
-body.modo-claro .full-screen {
-    background-color: #E0E0E0;
-}
-
-body.modo-claro .title {
-    color: #3B3B3B;
-}
-
-
 .card {
     position: relative;
     height: 300px;
@@ -95,4 +86,12 @@ body.modo-claro .title {
     .card-content h3 {
         font-size: 35px;
     }
+}
+
+body.modo-claro .full-screen {
+    background-color: #E0E0E0;
+}
+
+body.modo-claro .title {
+    color: #3B3B3B;
 }
