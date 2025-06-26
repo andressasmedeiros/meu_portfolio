@@ -65,28 +65,4 @@ function abrirModal(projeto) {
 }
 </script>
 
-<style>
-.titulo-secundario {
-    color: #88B04B;
-}
-
-body.modo-claro .titulo-secundario {
-    color: #3B7A57
-}
-
-body.modo-claro .p-dialog {
-    background-color: #fff !important;
-    color: #211d20 !important;
-}
-
-body.modo-claro .p-dialog .p-dialog-header,
-body.modo-claro .p-dialog h2 {
-    color: #211d20 !important;
-}
-
-body.modo-claro .p-dialog a.card {
-    background-color: #3B7A57 !important;
-}
-</style>
-
 <style src="./Projetos.css" scoped></style>

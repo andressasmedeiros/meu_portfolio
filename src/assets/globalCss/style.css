@@ -92,7 +92,6 @@ body .p-dialog {
     body .p-dialog {
         width: 95vw !important;
         max-height: 80vh !important;
-        /* limita a altura para 80% da viewport */
         margin: 0 !important;
         border-radius: 1rem !important;
         display: flex;
@@ -102,7 +101,6 @@ body .p-dialog {
     body .p-dialog .p-dialog-content {
         padding: 1rem !important;
         overflow-y: auto;
-        /* permite rolagem vertical se conteúdo passar da altura */
     }
 
     body .p-dialog .p-dialog-header {
@@ -202,7 +200,6 @@ html.modo-claro {
     background-color: #F8F4E3 !important;
 }
 
-/* Scrollbar padrão - modo escuro */
 ::-webkit-scrollbar {
     width: 12px;
     background-color: #1D1F1B;
@@ -214,7 +211,6 @@ html.modo-claro {
     border: 3px solid #1D1F1B;
 }
 
-/* Scrollbar no modo claro */
 body.modo-claro::-webkit-scrollbar {
     background-color: #F8F4E3 !important;
 }
@@ -224,7 +220,6 @@ body.modo-claro::-webkit-scrollbar-thumb {
     border: 3px solid #F8F4E3 !important;
 }
 
-/* Firefox */
 * {
     scrollbar-width: thin;
     scrollbar-color: #88B04B #1D1F1B;
@@ -234,7 +229,6 @@ body.modo-claro * {
     scrollbar-color: #7A9EBD #F8F4E3;
 }
 
-/* Scrollbar no modo claro - body E html */
 body.modo-claro::-webkit-scrollbar,
 html.modo-claro::-webkit-scrollbar {
     background-color: #F8F4E3 !important;
@@ -246,8 +240,33 @@ html.modo-claro::-webkit-scrollbar-thumb {
     border: 3px solid #F8F4E3 !important;
 }
 
-/* Firefox */
 body.modo-claro *,
 html.modo-claro * {
     scrollbar-color: #7A9EBD transparent;
+}
+
+.titulo-secundario {
+    color: #88B04B;
+}
+
+body.modo-claro .titulo-secundario {
+    color: #3B7A57
+}
+
+body.modo-claro .p-dialog {
+    background-color: #fff !important;
+    color: #211d20 !important;
+}
+
+body.modo-claro .p-dialog .p-dialog-header,
+body.modo-claro .p-dialog h2 {
+    color: #211d20 !important;
+}
+
+body.modo-claro .p-dialog a.card {
+    background-color: #3B7A57 !important;
+}
+
+.p-dialog .p-dialog-header {
+    margin-left: auto
 }
