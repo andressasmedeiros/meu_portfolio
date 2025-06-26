@@ -133,13 +133,13 @@
       <div class="flex flex-column" @click="goTo('sobre')">
         <span class="font-bold">Sobre</span>
       </div>
-      <div class="flex flex-column" @click="goTo('habilidades')">
+      <div class="flex flex-column" @click="goTo('#habilidades')">
         <span class="font-bold">Habilidades</span>
       </div>
-      <div class="flex flex-column" @click="goTo('projetos')">
+      <div class="flex flex-column" @click="goTo('#projetos')">
         <span class="font-bold">Projetos</span>
       </div>
-      <div class="flex flex-column" @click="goTo('contato')">
+      <div class="flex flex-column" @click="goTo('#contato')">
         <span class="font-bold">Contato</span>
       </div>
       <div class="flex flex-column">
@@ -155,9 +155,9 @@
 export default {
   methods: {
     goTo(id) {
-      const el = document.getElementById(id)
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' })
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
       }
     }
   },
