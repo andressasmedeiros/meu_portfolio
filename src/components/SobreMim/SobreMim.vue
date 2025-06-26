@@ -156,17 +156,14 @@ export default {
     goTo(id) {
       console.log(`Tentando rolar para o ID: ${id}`); // Adicione um log para depurar
 
-      // Adiciona um atraso de 150 milissegundos
       setTimeout(() => {
-        const element = document.getElementById(id);
-
+        const element = document.querySelector(`#${id}`);
         if (element) {
-          console.log(`Elemento com ID ${id} encontrado! Rolando...`);
-          element.scrollIntoView({ behavior: 'smooth' });
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         } else {
-          console.error(`Elemento com ID ${id} NÃO encontrado.`);
+          console.error(`Elemento com ID ${id} não encontrado.`);
         }
-      }, 150); // Aumente o tempo se necessário, 150ms é um bom ponto de partida
+      }, 400);
     }
   },
 
