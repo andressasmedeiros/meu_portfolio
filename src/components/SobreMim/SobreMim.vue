@@ -179,17 +179,40 @@ export default {
 
     registerPlugin(ScrollTrigger);
 
-    let startX, startY;
+    const CORDS = document.querySelectorAll('.toggle-scene__cord');
+    const HIT = document.querySelector('.toggle-scene__hit-spot');
+    const DUMMY = document.querySelector('.toggle-scene__dummy-cord');
+    const DUMMY_CORD = DUMMY.querySelector('line');
+
+    CORDS.forEach((cord, index) => {
+      gsap.fromTo(cord,
+        {
+          strokeDasharray: "100",
+          strokeDashoffset: "100",
+          opacity: 0
+        },
+        {
+          strokeDashoffset: "0",
+          opacity: 1,
+          duration: 1.5,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: cord,
+            start: "top 80%",
+            end: "bottom 60%",
+            scrub: true, // ou false para animação mais "dura"
+            toggleActions: "play none none reverse"
+          }
+        }
+      );
+    });
+
+    // Se quiser ainda usar o clique para alternar tema:
     const AUDIO = {
       CLICK: new Audio('https://assets.codepen.io/605876/click.mp3')
     };
 
     const STATE = { ON: false };
-    const CORD_DURATION = 0.1;
-    const CORDS = document.querySelectorAll('.toggle-scene__cord');
-    const HIT = document.querySelector('.toggle-scene__hit-spot');
-    const DUMMY = document.querySelector('.toggle-scene__dummy-cord');
-    const DUMMY_CORD = DUMMY.querySelector('line');
     const PROXY = document.createElement('div');
     const ENDX = DUMMY_CORD.getAttribute('x2');
     const ENDY = DUMMY_CORD.getAttribute('y2');
@@ -199,54 +222,31 @@ export default {
     };
     RESET();
 
-    const CORD_TL = timeline({
-      paused: true,
-      onStart: () => {
-        STATE.ON = !STATE.ON;
-        set(document.documentElement, { '--on': STATE.ON ? 1 : 0 });
-        set([DUMMY, HIT], { display: 'none' });
-        set(CORDS[0], { display: 'block' });
-        AUDIO.CLICK.play();
-
-        document.documentElement.classList.toggle('modo-claro', STATE.ON);
-        document.body.classList.toggle('modo-claro', STATE.ON);
-      },
-      onComplete: () => {
-        set([DUMMY, HIT], { display: 'block' });
-        set(CORDS[0], { display: 'none' });
-        RESET();
-      }
-    });
-
-    for (let i = 1; i < CORDS.length; i++) {
-      CORD_TL.add(to(CORDS[0], {
-        morphSVG: CORDS[i],
-        duration: CORD_DURATION,
-        repeat: 1,
-        yoyo: true
-      }));
-    }
-
     Draggable.create(PROXY, {
       trigger: HIT,
       type: 'x,y',
       onPress: e => {
-        startX = e.x;
-        startY = e.y;
+        this.startX = e.x;
+        this.startY = e.y;
       },
       onDrag() {
         set(DUMMY_CORD, { attr: { x2: this.x, y2: this.y } });
       },
-      onRelease(e) {
-        const DISTX = Math.abs(e.x - startX);
-        const DISTY = Math.abs(e.y - startY);
-        const TRAVELLED = Math.sqrt(DISTX ** 2 + DISTY ** 2);
+      onRelease: e => {
+        const distX = Math.abs(e.x - this.startX);
+        const distY = Math.abs(e.y - this.startY);
+        const travelled = Math.sqrt(distX ** 2 + distY ** 2);
+
         to(DUMMY_CORD, {
           attr: { x2: ENDX, y2: ENDY },
-          duration: CORD_DURATION,
+          duration: 0.1,
           onComplete: () => {
-            if (TRAVELLED > 50) {
-              CORD_TL.restart();
+            if (travelled > 50) {
+              STATE.ON = !STATE.ON;
+              set(document.documentElement, { '--on': STATE.ON ? 1 : 0 });
+              AUDIO.CLICK.play();
+              document.documentElement.classList.toggle('modo-claro', STATE.ON);
+              document.body.classList.toggle('modo-claro', STATE.ON);
             } else {
               RESET();
             }
