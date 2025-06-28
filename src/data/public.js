@@ -50,52 +50,6 @@ export default [
         repositorio: "https://github.com/andressasmedeiros/projeto_finalM01"
     },
     {
-        titulo: "Farmácia Saúde e Vida",
-        resumo: "HTML, CSS, JavaScript com localStorage",
-        descricao: [
-            {
-                titulo: "Descrição do Projeto:",
-                texto: `Aplicação simples para cadastro, listagem e exclusão de medicamentos utilizando HTML, CSS e JavaScript. Os dados são armazenados no localStorage do navegador, facilitando o gerenciamento do estoque de forma local e sem back-end.`
-            },
-            {
-                titulo: "Objetivo:",
-                texto: `Praticar manipulação do DOM, armazenamento local (localStorage) e criação de interfaces responsivas para gestão de estoque farmacêutico.`
-            },
-            {
-                titulo: "Tecnologias Utilizadas:",
-                texto: `• HTML5 para estruturação semântica
-                • CSS3 para estilização e responsividade
-                • JavaScript puro para lógica de CRUD (Create, Read, Delete)
-                • Uso do localStorage para persistência dos dados`
-            },
-            {
-                titulo: "Funcionalidades Principais:",
-                texto: `• Cadastro de medicamentos com nome, laboratório, preço, indicação e imagem
-                • Listagem dinâmica dos medicamentos cadastrados
-                • Remoção individual de itens da lista
-                • Validação simples dos campos do formulário
-                • Layout responsivo para diferentes dispositivos`
-            },
-            {
-                titulo: "Melhorias Futuras:",
-                texto: `• Implementar edição de medicamentos cadastrados
-                • Adicionar filtro e pesquisa na listagem
-                • Melhorar acessibilidade e feedback visual
-                • Integrar com back-end para armazenamento permanente`
-            },
-            {
-                titulo: "Aprendizado:",
-                texto: `• Manipulação eficiente do DOM com JavaScript
-                • Gerenciamento de dados via localStorage
-                • Construção de formulários com validação básica
-                • Importância do design responsivo e usabilidade`
-            }
-        ],
-        imagem: require("@/assets/img/farmacia-thumb.png"),
-        video: require("@/assets/videos/farmacia.mp4"),
-        repositorio: "https://github.com/DEVinHouse-Clamed-V3/mini-projeto-avaliativo-grupo-algoritmos"
-    },
-    {
         titulo: "Site Gerenciamento Farmácia - Backend",
         resumo: "Node.js, Express, TypeScript, TypeORM, JWT, Swagger",
         descricao: [
@@ -144,6 +98,52 @@ export default [
         imagem: require("@/assets/img/thumb_backend.png"),
         video: require("@/assets/videos/backend.mp4"),
         repositorio: "https://github.com/andressasmedeiros/site-gerenciamento-farmacia/tree/main/api"
+    },
+    {
+        titulo: "Farmácia Saúde e Vida",
+        resumo: "HTML, CSS, JavaScript com localStorage",
+        descricao: [
+            {
+                titulo: "Descrição do Projeto:",
+                texto: `Aplicação simples para cadastro, listagem e exclusão de medicamentos utilizando HTML, CSS e JavaScript. Os dados são armazenados no localStorage do navegador, facilitando o gerenciamento do estoque de forma local e sem back-end.`
+            },
+            {
+                titulo: "Objetivo:",
+                texto: `Praticar manipulação do DOM, armazenamento local (localStorage) e criação de interfaces responsivas para gestão de estoque farmacêutico.`
+            },
+            {
+                titulo: "Tecnologias Utilizadas:",
+                texto: `• HTML5 para estruturação semântica
+                • CSS3 para estilização e responsividade
+                • JavaScript puro para lógica de CRUD (Create, Read, Delete)
+                • Uso do localStorage para persistência dos dados`
+            },
+            {
+                titulo: "Funcionalidades Principais:",
+                texto: `• Cadastro de medicamentos com nome, laboratório, preço, indicação e imagem
+                • Listagem dinâmica dos medicamentos cadastrados
+                • Remoção individual de itens da lista
+                • Validação simples dos campos do formulário
+                • Layout responsivo para diferentes dispositivos`
+            },
+            {
+                titulo: "Melhorias Futuras:",
+                texto: `• Implementar edição de medicamentos cadastrados
+                • Adicionar filtro e pesquisa na listagem
+                • Melhorar acessibilidade e feedback visual
+                • Integrar com back-end para armazenamento permanente`
+            },
+            {
+                titulo: "Aprendizado:",
+                texto: `• Manipulação eficiente do DOM com JavaScript
+                • Gerenciamento de dados via localStorage
+                • Construção de formulários com validação básica
+                • Importância do design responsivo e usabilidade`
+            }
+        ],
+        imagem: require("@/assets/img/farmacia-thumb.png"),
+        video: require("@/assets/videos/farmacia.mp4"),
+        repositorio: "https://github.com/DEVinHouse-Clamed-V3/mini-projeto-avaliativo-grupo-algoritmos"
     },
     {
         titulo: "AvaliaAqui",
