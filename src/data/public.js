@@ -194,7 +194,7 @@ export default [
     },
     {
         titulo: "E-commerce Farmácia - Frontend",
-        resumo: "React.js, TypeScript, Axios, React Router (EM CONSTRUÇÃO)",
+        resumo: "Vue.js, TypeScript, Axios (EM CONSTRUÇÃO)",
         descricao: [
             {
                 titulo: "Descrição do Projeto:",
