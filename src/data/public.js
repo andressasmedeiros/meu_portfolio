@@ -97,7 +97,7 @@ export default [
         ],
         imagem: require("@/assets/img/thumb_backend.png"),
         video: require("@/assets/videos/backend.mp4"),
-        repositorio: "https://github.com/andressasmedeiros/site-gerenciamento-farmacia/tree/main/api"
+        repositorio: "https://github.com/andressasmedeiros/gerenciamento_farmacia/tree/main/api"
     },
     {
         titulo: "Farmácia Saúde e Vida",
@@ -236,7 +236,7 @@ export default [
         ],
         imagem: require("@/assets/img/site_farmacia.png"),
         video: require("@/assets/videos/farmacia.mp4"),
-        repositorio: "https://github.com/andressasmedeiros/site-gerenciamento-farmacia/tree/main/web"
+        repositorio: "https://github.com/andressasmedeiros/gerenciamento_farmacia/tree/main/web"
     },
     {
         titulo: "Sistema de Pedidos de Hambúrgueres para Delivery",
