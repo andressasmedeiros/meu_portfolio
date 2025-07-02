@@ -47,7 +47,7 @@ export default [
         ],
         imagem: require("@/assets/img/thumb-video.png"),
         video: require("@/assets/videos/video.mp4"),
-        repositorio: "https://github.com/andressasmedeiros/projeto_finalM01"
+        repositorio: "https://github.com/andressasmedeiros/app_farmacia_reactnative"
     },
     {
         titulo: "Site Gerenciamento Farmácia - Backend",
