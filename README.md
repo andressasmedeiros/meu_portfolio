@@ -11,7 +11,7 @@
 Este projeto é meu portfólio pessoal, criado para apresentar meus projetos, habilidades e experiência como desenvolvedora fullstack.
 
 ## <a id="tecnologias-utilizadas"></a>Site Publicado
-[https://github.com/andressasmedeiros/meu_portfolio](https://portfolioandressamedeiros.netlify.app/)
+https://portfolioandressamedeiros.netlify.app/
 
 ## <a id="tecnologias-utilizadas"></a>Tecnologias Utilizadas
 
