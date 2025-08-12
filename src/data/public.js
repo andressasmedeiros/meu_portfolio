@@ -193,50 +193,55 @@ export default [
         repositorio: "https://github.com/DEVinHouse-Clamed-V3/app-avaliaaqui-andressasmedeiros"
     },
     {
-        titulo: "E-commerce Farmácia - Frontend",
-        resumo: "Vue.js, TypeScript, Axios (EM CONSTRUÇÃO)",
+        titulo: "Projeto Monitoramento de Horta",
+        resumo: "Java, SpringBoot, HTML, CSS, Javascript, C++",
         descricao: [
             {
                 titulo: "Descrição do Projeto:",
-                texto: `Aplicação web frontend para gerenciamento de farmácia, permitindo interação com a API backend para controle de usuários, produtos, movimentações e permissões. Desenvolvida com Vue e JavaScript para uma interface moderna, responsiva e dinâmica.`
+                texto: `Este projeto foi desenvolvido como parte de uma atividade extensionista da UNINTER, no curso de Análise e Desenvolvimento de Sistemas.
+Apesar de ter surgido como um trabalho acadêmico, foi um prazer enorme desenvolver essa solução, unindo IoT, backend e frontend para criar um sistema funcional e prático para monitoramento de hortas.`
             },
             {
                 titulo: "Objetivo:",
-                texto: `Criar uma interface intuitiva e funcional para que usuários possam gerenciar o estoque, movimentações entre filiais e cadastro de usuários com diferentes níveis de permissão, consumindo dados via API REST.`
+                texto: `O objetivo principal é automatizar o monitoramento de uma horta doméstica, fornecendo informações em tempo real sobre:
+
+                🌡️ Temperatura do ar
+                💧 Umidade do ar
+                🌱 Umidade do solo
+                ☀️ Intensidade de luz ambiente
+                🚿 Indicação se a planta precisa ou não ser regada
+                🌧️ Indica se está chovendo
+                💻 Interação com pesquisa no google dentro da plataforma, para pesquisar dúvidas e curiosidades sem sair da tela
+                🛜 Conexão entre o protótipo via Wifi
+                🖥️ Tela OLED no arduíno para interação local, mostrando todos os dados
+                A ideia é tornar o cuidado com hortas mais fácil, eficiente e acessível, ajudando na produção sustentável de alimentos em casa.`
             },
             {
                 titulo: "Tecnologias Utilizadas:",
-                texto: `• Vue.js para construção da interface e componentes reutilizáveis
-                • JavaScript para tipagem estática e prevenção de erros
-                • Axios para comunicação com API RESTful`
+                texto: `• HTML, CSS e Javascript no front
+                • Java com SpringBoot no backend
+                • Arduino/ESP32 com C++ no hardware`
             },
             {
                 titulo: "Funcionalidades Principais:",
-                texto: `• Login e autenticação via JWT com armazenamento seguro
-                • Listagem, cadastro, edição e exclusão de produtos e usuários
-                • Controle visual do status das movimentações entre filiais
-                • Dashboard com filtros e buscas para facilitar a gestão
-                • Proteção de rotas baseado em permissões e perfis do usuário`
-            },
-            {
-                titulo: "Melhorias Futuras:",
-                texto: `• Implementar testes end-to-end para fluxos críticos
-                • Otimizar a performance com React Suspense e lazy loading
-                • Adicionar notificações em tempo real para atualizações de estoque
-                • Melhorar a acessibilidade e responsividade para dispositivos móveis
-                • Integrar gráficos para análise de movimentações e vendas`
+                texto: `• Coleta e envio de dados do Arduino para a API
+                • Exibição dos dados em tempo real no site
+                • Identificação automática da necessidade de rega
+                • Status visual de conexão com o dispositivo
+                • Exibição de curiosidades sobre hortas`
             },
             {
                 titulo: "Aprendizado:",
-                texto: `• Gerenciamento de estado e efeitos colaterais com hooks
-                • Integração segura com APIs REST usando Axios e JWT
-                • Criação de UI moderna e responsiva com Styled Components
-                • Configuração de rotas protegidas`
+                texto: `• Maior dificuldade: integrar corretamente todos os componentes do Arduino (sensores, tela OLED, comunicação via Wi-Fi) para funcionarem em conjunto, sem conflitos de código ou falhas na leitura dos dados.
+
+                Aprendizados:
+                • Foi meu primeiro contato com IoT, Arduino e sensores, o que me permitiu conhecer melhor esse universo da eletrônica aplicada à programação.
+                • Aprendi a estruturar a comunicação entre hardware e software usando uma API REST, criando um ecossistema funcional entre o dispositivo físico e a aplicação web.
+                • Desenvolvi habilidades para depurar problemas de hardware e código simultaneamente, algo muito diferente do desenvolvimento apenas de software.`
             }
         ],
-        imagem: require("@/assets/img/site_farmacia.png"),
-        video: require("@/assets/videos/farmacia.mp4"),
-        repositorio: "https://github.com/andressasmedeiros/gerenciamento_farmacia/tree/main/web"
+        imagem: require("@/assets/img/horta.png"),
+        repositorio: "https://github.com/andressasmedeiros/horta_IoT"
     },
     {
         titulo: "Sistema de Pedidos de Hambúrgueres para Delivery",
