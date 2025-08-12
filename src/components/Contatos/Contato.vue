@@ -164,6 +164,9 @@
         </g>
       </svg>
     </div>
+    <footer class="w-full text-center mt-5 mb-3">
+      <p>&copy; 2025 - Andressa Medeiros - Todos os direitos reservados</p>
+    </footer>
   </section>
 </template>
 
