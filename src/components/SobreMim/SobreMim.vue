@@ -119,10 +119,9 @@
               Desenvolvedora Full Stack
             </p>
             <p class="texto-responsivo mb-2">
-              Gosto de criar soluções que realmente funcionam e fazem sentido para quem
-              usa. Trabalho tanto no front-end quanto no back-end. Já
-              colaborei em projetos de outros desenvolvedores, contribuindo com organização,
-              integrações e melhorias no código.
+              Apaixonada por tecnologia e por dar vida a projetos digitais. 
+              Adoro explorar tanto o front quanto o back-end, sempre buscando unir criatividade e funcionalidade. 
+              Curiosa por natureza, estou sempre atrás de aprender algo novo e transformar ideias em soluções que fazem sentido.
             </p>
           </div>
         </div>

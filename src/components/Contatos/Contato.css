@@ -50,6 +50,10 @@
   font-size: 30px;
 }
 
+.footer p {
+  color: #F8F4E3;
+}
+
 .contact-itens {
   font-family: 'Open Sans', sans-serif;
   color: #F8F4E3;
@@ -150,4 +154,8 @@ body.modo-claro .icon-circle {
 
 body.modo-claro .icon {
   color: #1c1a1e;
+}
+
+body.modo-claro .footer p {
+  color: #1D1F1B;
 }
