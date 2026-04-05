@@ -116,12 +116,13 @@
               <span class="font-semibold text-intro-name"> Andressa Medeiros</span>
             </h1>
             <p class="subtitle font-semibold font-geral mb-2">
-              Desenvolvedora Full Stack
+              QA Engineer | Testes Manuais e Automação
             </p>
             <p class="texto-responsivo mb-2">
-              Apaixonada por tecnologia e por dar vida a projetos digitais. 
-              Adoro explorar tanto o front quanto o back-end, sempre buscando unir criatividade e funcionalidade. 
-              Curiosa por natureza, estou sempre atrás de aprender algo novo e transformar ideias em soluções que fazem sentido.
+              Apaixonada por tecnologia e por dar vida a projetos digitais.
+              Adoro explorar tanto o front quanto o back-end, mas foi nos testes de software que encontrei minha maior afinidade.
+              Curiosa por natureza, estou sempre em busca de aprender mais e garantir a qualidade das aplicações,
+              identificando falhas e contribuindo para soluções mais confiáveis.  
             </p>
           </div>
         </div>

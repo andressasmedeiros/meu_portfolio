@@ -33,13 +33,13 @@ const habilidades = [
   { nome: 'JavaScript', imagem: new URL('@/assets/img/javascript.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/meu_portfolio' },
   { nome: 'SQL', imagem: new URL('@/assets/img/sql.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/projeto_rpg' },
   { nome: 'Node.js', imagem: new URL('@/assets/img/node.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/gerenciamento_farmacia/tree/main/api' },
-  { nome: 'Vue.js', imagem: new URL('@/assets/img/vue.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/meu_portfolio' },
-  { nome: 'PrimeVue', imagem: new URL('@/assets/img/primevue.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/meu_portfolio' },
-  { nome: 'PrimeFlex', imagem: new URL('@/assets/img/primeflex.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/meu_portfolio' },
-  { nome: 'React Native', imagem: new URL('@/assets/img/react.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/app_farmacia_reactnative' },
-  { nome: 'TypeScript', imagem: new URL('@/assets/img/typescript.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/gerenciamento_farmacia/tree/main/api' },
+  { nome: 'Cypress', imagem: new URL('@/assets/img/cypress.svg', import.meta.url).href, link: 'https://github.com/andressasmedeiros' },
+  { nome: 'Playwright', imagem: new URL('@/assets/img/playwright.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros' },
+  { nome: 'Postman', imagem: new URL('@/assets/img/postman.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros' },
   { nome: 'Git', imagem: new URL('@/assets/img/git.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros' },
-  { nome: 'GitHub', imagem: new URL('@/assets/img/github.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros' }
+  { nome: 'GitHub', imagem: new URL('@/assets/img/github.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros' },
+  { nome: 'HTML', imagem: new URL('@/assets/img/html.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros' },
+  { nome: 'CSS', imagem: new URL('@/assets/img/css.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros' }
 ];
 </script>
 
