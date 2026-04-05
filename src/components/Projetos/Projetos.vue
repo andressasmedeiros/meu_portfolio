@@ -4,7 +4,14 @@
             <span class="title mt-3">Projetos</span>
         </div>
 
-        <div class="grid w-12 justify-content-center px-4">
+        <div class="w-12 text-center flex justify-content-center align-self-center mb-5 mt-6">
+            <p class="qa-banner">
+                🚧 Projetos de QA em desenvolvimento, incluindo testes manuais, <br> testes de API e automação com Cypress e
+                Playwright.
+            </p>
+        </div>
+
+        <div class="grid w-12 justify-content-center px-4 mt-8">
             <div v-for="(projeto, index) in projetos" :key="index" class="col-12 sm:col-6 lg:col-4">
                 <div class="card w-12 flex justify-content-center align-items-center text-center text-white overflow-hidden border-round-xl cursor-pointer"
                     :style="{ backgroundImage: `url(${projeto.imagem})` }" @click="abrirModal(projeto)">

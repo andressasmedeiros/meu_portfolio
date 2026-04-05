@@ -95,3 +95,26 @@ body.modo-claro .full-screen {
 body.modo-claro .title {
     color: #3B3B3B;
 }
+.qa-banner {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* sombra suave */
+}
+.grid {
+    margin-bottom: 2rem;
+}
+.content-wrapper {
+    margin-top: 4rem; /* ajusta aqui */
+}
+.qa-banner {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+
+    text-shadow: 
+        0 0 6px rgba(255, 0, 0, 0.6),   /* vermelho (glow atrás) */
+        1px 1px 4px rgba(0, 0, 0, 0.6); /* sombra preta */
+}
+
