@@ -27,7 +27,7 @@
 <script setup lang="js">
 const habilidades = [
   { nome: 'Java', imagem: new URL('@/assets/img/java.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/projeto_rpg' },
-  { nome: 'Spring', imagem: new URL('@/assets/img/cucumber.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/teste_java_bdd' },
+  { nome: 'Cucumber', imagem: new URL('@/assets/img/cucumber.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/teste_java_bdd' },
   { nome: 'Docker', imagem: new URL('@/assets/img/docker.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/projeto_rpg' },
   { nome: 'PostgreSQL', imagem: new URL('@/assets/img/postgresql.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/projeto_rpg' },
   { nome: 'JavaScript', imagem: new URL('@/assets/img/javascript.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/meu_portfolio' },
