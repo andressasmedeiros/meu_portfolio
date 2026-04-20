@@ -34,7 +34,7 @@ const habilidades = [
   { nome: 'SQL', imagem: new URL('@/assets/img/sql.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/projeto_rpg' },
   { nome: 'Node.js', imagem: new URL('@/assets/img/node.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/gerenciamento_farmacia/tree/main/api' },
   { nome: 'Cypress', imagem: new URL('@/assets/img/cypress.svg', import.meta.url).href, link: 'https://github.com/andressasmedeiros' },
-  { nome: 'Playwright', imagem: new URL('@/assets/img/playwright.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros' },
+  { nome: 'Playwright', imagem: new URL('@/assets/img/playwright.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros/playwright_test_login' },
   { nome: 'Postman', imagem: new URL('@/assets/img/postman.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros' },
   { nome: 'Git', imagem: new URL('@/assets/img/git.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros' },
   { nome: 'Jest', imagem: new URL('@/assets/img/jest.png', import.meta.url).href, link: 'https://github.com/andressasmedeiros' },

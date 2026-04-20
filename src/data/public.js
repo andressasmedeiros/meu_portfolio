@@ -1,5 +1,62 @@
 export default [
     {
+        titulo: "Playwright E2E Tests",
+        resumo: "Playwright, Node.js, TypeScript",
+        descricao: [
+            {
+                titulo: "Descrição do Projeto:",
+                texto: `Projeto de automação de testes end-to-end utilizando Playwright para validar fluxos essenciais de uma aplicação web, com foco em login e acesso à página de produtos.`
+            },
+            {
+                titulo: "Problema que Resolve:",
+                texto: `Garante a qualidade das funcionalidades críticas da aplicação, como autenticação e navegação, evitando falhas manuais e aumentando a confiabilidade do sistema.`
+            },
+            {
+                titulo: "Tecnologias Utilizadas:",
+                texto: `• Playwright para automação de testes
+                        • Node.js como ambiente de execução
+            '           • TypeScript para tipagem e organização do código`
+            },
+            {
+                titulo: "Funcionalidades Principais:",
+                texto: `• Teste de login com credenciais válidas
+                        • Teste de login com credenciais inválidas
+                        • Validação de mensagens de erro
+                        • Acesso automatizado à página de produtos
+                        • Estrutura para validação dos nomes dos produtos`
+            },
+            {
+                titulo: "Estrutura do Projeto:",
+                texto: `• tests/login.spec.ts
+                        • tests/products.spec.ts
+                        • playwright.config.ts`
+            },
+            {
+                titulo: "Como Executar:",
+                texto: `• Instalar dependências com npm install
+                        • Instalar browsers com npx playwright install
+                        • Executar testes com npx playwright test`
+            },
+            {
+                titulo: "Próximos Passos:",
+                texto: `• Validar nomes dos produtos
+                        • Testar ordenação de produtos
+                        • Implementar Page Object Model (POM)
+                        • Adicionar testes de carrinho`
+            },
+            {
+                titulo: "Aprendizado:",
+                texto: `• Automação de testes end-to-end com Playwright
+                        • Organização de testes com TypeScript
+                        • Validação de fluxos de autenticação
+                        • Estruturação de testes para escalabilidade`
+            }
+        ],
+        imagem: require("@/assets/img/thumb-playwright.png"),
+        video: require("@/assets/videos/video_playwright.mp4"),
+        repositorio: "https://github.com/andressasmedeiros/playwright_test_login"
+    },
+    {
         titulo: "Farma Transportes",
         resumo: "React Native, Expo, TypeScript",
         descricao: [

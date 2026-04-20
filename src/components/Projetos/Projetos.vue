@@ -6,7 +6,7 @@
 
         <div class="w-12 text-center flex justify-content-center align-self-center mb-5 mt-6">
             <p class="qa-banner">
-                🚧 Projetos de QA em desenvolvimento (testes manuais, testes unitários e de integração com Jest,<br>
+                🚧 Mais projetos de QA em desenvolvimento (testes manuais, testes unitários e de integração com Jest,<br>
             testes de API e automação E2E com Cypress e Playwright)
             </p>
         </div>
