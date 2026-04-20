@@ -106,7 +106,7 @@
     </div>
     <div class="container-imagem">
       <div class="w-full md:w-6 flex justify-content-center align-items-center">
-        <img src="@/assets/img/livroteste2.png" alt="Logo" class="logo-bounce imagem-logo">
+        <img src="@/assets/img/Cat.gif" alt="Logo" class="logo-bounce imagem-logo">
       </div>
       <div class="w-12 md:w-6 flex justify-content-center align-items-center">
         <div class="text-white px-4 responsivo">
