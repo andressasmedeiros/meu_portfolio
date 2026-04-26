@@ -178,8 +178,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
-    const dom = {
+  const dom = {
     face: document.querySelector('.face'),
+    shadows: document.querySelectorAll('.shadow'),
     eye: document.querySelectorAll('.eye'),
     innerFace: document.querySelector('.inner-face'),
     hairFront: document.querySelectorAll('.hair-front'),
@@ -187,7 +188,6 @@ onMounted(() => {
     ear: document.querySelectorAll('.ear'),
     eyebrowLeft: document.querySelector('.eyebrow-left'),
     eyebrowRight: document.querySelector('.eyebrow-right'),
-    neckShadow: document.querySelector('.me > .shadow'),
   }
 
   function animateEntrance() {
@@ -238,6 +238,12 @@ onMounted(() => {
     gsap.to(dom.face, {
       yPercent: y / 30,
       xPercent: x / 30,
+      overwrite: 'auto',
+    })
+
+    gsap.to(dom.shadows, {
+      yPercent: -y / 10,
+      xPercent: -x / 10,
       overwrite: 'auto',
     })
 
