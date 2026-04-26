@@ -178,10 +178,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
-  const safeToAnimate = window.matchMedia('(prefers-reduced-motion: no-preference)').matches
-  if (!safeToAnimate) return
-
-  const dom = {
+    const dom = {
     face: document.querySelector('.face'),
     eye: document.querySelectorAll('.eye'),
     innerFace: document.querySelector('.inner-face'),
@@ -244,12 +241,6 @@ onMounted(() => {
       overwrite: 'auto',
     })
 
-    gsap.to(dom.shadows, {
-      yPercent: -y / 10,
-      xPercent: -x / 10,
-      overwrite: 'auto',
-    })
-
     gsap.to(dom.eye, {
       yPercent: y / 3,
       xPercent: x / 2,
@@ -291,14 +282,16 @@ onMounted(() => {
 
   gsap.ticker.add(moveSVG)
 
-  window.addEventListener('mousemove', (e) => {
+  const handleMouseMove = (e) => {
     xPosition = mapWidth(e.clientX)
     yPosition = mapHeight(e.clientY)
-  })
+  }
+
+  window.addEventListener('mousemove', handleMouseMove)
 
   onBeforeUnmount(() => {
     window.removeEventListener('resize', setMaps)
-    window.removeEventListener('mousemove', () => { })
+    window.removeEventListener('mousemove', handleMouseMove)
     if (contatoSection) observer.unobserve(contatoSection)
   })
 })
