@@ -57,6 +57,72 @@ export default [
         repositorio: "https://github.com/andressasmedeiros/playwright_test_login"
     },
     {
+        titulo: "Agent01 - Trello Task Manager",
+        resumo: "Python, Trello API, Gemini LLM",
+        descricao: [
+            {
+                titulo: "Descrição do Projeto:",
+                texto: `Agente inteligente integrado ao Trello que automatiza o gerenciamento de tarefas utilizando um modelo de linguagem (LLM). O sistema interage com o usuário para criar, listar e atualizar tarefas em um board específico.`
+            },
+            {
+                titulo: "Problema que Resolve:",
+                texto: `Reduz a necessidade de gerenciamento manual de tarefas, automatizando a organização do dia a dia e aumentando a produtividade através de comandos em linguagem natural.`
+            },
+            {
+                titulo: "Tecnologias Utilizadas:",
+                texto: `• Python 3
+                    • Trello API (py-trello)
+                    • Google ADK (Agent Development Kit)
+                    • Gemini (LLM)
+                    • dotenv para variáveis de ambiente`
+            },
+            {
+                titulo: "Funcionalidades Principais:",
+                texto: `• Criação automática de tarefas no Trello
+                    • Listagem de tarefas (todas ou por status)
+                    • Alteração de status (A Fazer, Em Andamento, Concluído)
+                    • Organização baseada na data e hora atual
+                    • Interação via linguagem natural com o usuário`
+            },
+            {
+                titulo: "Estrutura do Projeto:",
+                texto: `• agent01/agent.py
+                    • agent01/requirements.txt
+                    • agent01/.env-exemplo
+                    • agent01/.gitignore
+                    • Estrutura de pastas com separação de configuração e lógica`
+            },
+            {
+                titulo: "Como Executar:",
+                texto: `• Clonar o repositório
+                    • Criar ambiente virtual (python -m venv venv)
+                    • Ativar ambiente
+                    • Instalar dependências (pip install -r agent01/requirements.txt)
+                    • Configurar .env com credenciais do Trello
+                    • Executar o agente`
+            },
+            {
+                titulo: "Próximos Passos:",
+                texto: `• Implementar remoção de tarefas
+                    • Melhorar parsing de comandos do usuário
+                    • Reduzir chamadas ao LLM (otimização de quota)
+                    • Implementar cache de respostas
+                    • Criar interface web ou CLI`
+            },
+            {
+                titulo: "Aprendizado:",
+                texto: `• Integração de APIs externas (Trello)
+                    • Uso de LLM para automação de tarefas
+                    • Manipulação de variáveis de ambiente
+                    • Estruturação de agentes inteligentes
+                    • Tratamento de erros e limites de API (rate limit)`
+            }
+        ],
+        imagem: require("@/assets/img/agentai.png"),
+        video: require("@/assets/videos/agentTrello.mp4"),
+        repositorio: "https://github.com/andressasmedeiros/AgentAI-DIO"
+    },
+    {
         titulo: "Farma Transportes",
         resumo: "React Native, Expo, TypeScript",
         descricao: [
